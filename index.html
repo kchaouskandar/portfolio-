@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Iskandar Kchaou — Full-Stack Developer / Computer Science Student" />
+  <title>Iskandar Kchaou | Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">I.K.</a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shapes">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__tag" data-reveal>Hello, I'm</div>
+        <h1 class="hero__name" data-reveal data-delay="100">Iskandar<br />Kchaou</h1>
+        <h2 class="hero__title" data-reveal data-delay="200">Full-Stack Developer /<br />Computer Science Student</h2>
+        <p class="hero__desc" data-reveal data-delay="300">
+          I build practical web apps and solve problems with code.
+          Turning ideas into clean, functional software — from frontend interfaces to backend logic.
+        </p>
+        <div class="hero__actions" data-reveal data-delay="400">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          <a href="https://github.com/kchaouskandar" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+          <a href="https://codeforces.com/profile/kchskandar" target="_blank" rel="noopener" class="btn btn--ghost">Codeforces</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__number">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text" data-reveal data-delay="100">
+          <p>
+            I'm a Computer Science student at ISIMSF focused on software development
+            and algorithmic problem solving. I build practical web apps and sharpen my
+            skills through competitive programming.
+          </p>
+          <p>
+            I enjoy combining technical knowledge with clean, useful interfaces — writing
+            code that is both functional and maintainable. From designing database schemas
+            to crafting responsive frontends, I care about the full picture.
+          </p>
+          <p>
+            TOP 2022 Tunisian Olympiad in Programming finalist and IEEE Hello World 5.0
+            participant — I approach every project with a problem-solver's mindset.
+          </p>
+        </div>
+        <div class="about__stat" data-reveal data-delay="200">
+          <div class="stat__block">
+            <span class="stat__number">3+</span>
+            <span class="stat__label">Years Coding</span>
+          </div>
+          <div class="stat__block">
+            <span class="stat__number">4</span>
+            <span class="stat__label">Projects Shipped</span>
+          </div>
+          <div class="stat__block">
+            <span class="stat__number">TOP 2022</span>
+            <span class="stat__label">Tunisian Olympiad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__number">02</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+
+      <!-- Featured: ParkEase -->
+      <div class="project featured" data-reveal>
+        <div class="project__image">
+          <img src="assets/project-images/Parkease.png" alt="ParkEase parking management app" loading="lazy" />
+          <div class="project__image-glow"></div>
+        </div>
+        <div class="project__info">
+          <span class="project__tag">Featured Project</span>
+          <h3 class="project__title">ParkEase</h3>
+          <p class="project__type">Full-Stack Parking Management App</p>
+          <p class="project__desc">
+            A parking management web application with user and admin views. Track occupied
+            spots, view renter information, check real-time availability, and submit parking
+            requests through an intuitive interface.
+          </p>
+          <ul class="project__tech">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Firebase</li>
+            <li>Leaflet</li>
+          </ul>
+          <a href="https://parkease-app.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">Live Demo →</a>
+        </div>
+      </div>
+
+      <!-- Featured: E-Commerce -->
+      <div class="project featured" data-reveal data-delay="100">
+        <div class="project__image">
+          <img src="assets/project-images/E-Commerce.png" alt="E-Commerce Web App screenshot" loading="lazy" />
+          <div class="project__image-glow"></div>
+        </div>
+        <div class="project__info">
+          <span class="project__tag">Full-Stack Project</span>
+          <h3 class="project__title">E-Commerce Web App</h3>
+          <p class="project__type">Flask E-Commerce Platform</p>
+          <p class="project__desc">
+            Full-stack e-commerce platform with user authentication, product catalog,
+            shopping cart, purchase history, analytics dashboard, and a product
+            recommendation engine — built with Flask and SQLAlchemy.
+          </p>
+          <ul class="project__tech">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>SQLAlchemy</li>
+            <li>SQLite</li>
+            <li>HTML/CSS/JS</li>
+          </ul>
+          <a href="https://projet-e-commerce-zrub.onrender.com/" target="_blank" rel="noopener" class="btn btn--primary">Live Demo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__number">03</span>
+        <h2 class="section__title">Skills</h2>
+      </div>
+      <div class="skills__grid">
+
+        <div class="card skill-category" data-reveal>
+          <h3 class="skill-category__title">Frontend</h3>
+          <ul class="skill-category__list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="card skill-category" data-reveal data-delay="100">
+          <h3 class="skill-category__title">Backend / Full-Stack</h3>
+          <ul class="skill-category__list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>C++</li>
+            <li>Flask</li>
+            <li>APIs</li>
+            <li>CRUD Apps</li>
+            <li>Form Handling</li>
+          </ul>
+        </div>
+
+        <div class="card skill-category" data-reveal data-delay="200">
+          <h3 class="skill-category__title">Computer Science</h3>
+          <ul class="skill-category__list">
+            <li>Algorithms</li>
+            <li>Data Structures</li>
+            <li>Operating Systems</li>
+            <li>Databases</li>
+            <li>Computer Networks</li>
+          </ul>
+        </div>
+
+        <div class="card skill-category" data-reveal data-delay="300">
+          <h3 class="skill-category__title">Tools</h3>
+          <ul class="skill-category__list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Deployment</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__number">04</span>
+        <h2 class="section__title">Education &amp; Achievements</h2>
+      </div>
+      <div class="education__grid">
+
+        <div class="card edu-item" data-reveal>
+          <div class="edu-item__icon">⌨</div>
+          <h3 class="edu-item__title">Bachelor's in Computer Science</h3>
+          <p class="edu-item__meta">ISIMSF — Present</p>
+          <p class="edu-item__desc">Pursuing a degree in computer science with coursework in algorithms, data structures, databases, operating systems, and networking.</p>
+        </div>
+
+        <div class="card edu-item" data-reveal data-delay="100">
+          <div class="edu-item__icon">🏆</div>
+          <h3 class="edu-item__title">TOP 2022 — Tunisian Olympiad in Programming</h3>
+          <p class="edu-item__meta">National Finalist</p>
+          <p class="edu-item__desc">Ranked among the top competitive programmers in Tunisia in the 2022 edition of the national programming olympiad.</p>
+        </div>
+
+        <div class="card edu-item" data-reveal data-delay="200">
+          <div class="edu-item__icon">🤖</div>
+          <h3 class="edu-item__title">IEEE Hello World 5.0</h3>
+          <p class="edu-item__meta">Participant</p>
+          <p class="edu-item__desc">Selected participant in IEEE's flagship software development competition, building real-world projects in a team setting.</p>
+        </div>
+
+      </div>
+
+      <!-- Languages -->
+      <div class="subsection__header" data-reveal>
+        <span class="section__number">05</span>
+        <h3 class="subsection__title">Languages</h3>
+      </div>
+      <div class="languages__grid">
+        <div class="card lang-item" data-reveal>
+          <span class="lang-item__name">Arabic</span>
+          <span class="lang-item__level">Native</span>
+        </div>
+        <div class="card lang-item" data-reveal data-delay="100">
+          <span class="lang-item__name">French</span>
+          <span class="lang-item__level">Fluent</span>
+        </div>
+        <div class="card lang-item" data-reveal data-delay="200">
+          <span class="lang-item__name">English</span>
+          <span class="lang-item__level">Professional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__number">06</span>
+        <h2 class="section__title">Get In Touch</h2>
+      </div>
+      <p class="contact__intro" data-reveal>
+        Have a project idea, a question, or just want to say hi?<br />
+        Feel free to reach out.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__links" data-reveal>
+          <a href="mailto:kchaouiskandar@gmail.com" class="contact__link">
+            <span class="contact__link-icon">✉</span>
+            <span>kchaouiskandar@gmail.com</span>
+          </a>
+          <a href="https://github.com/kchaouskandar" target="_blank" rel="noopener" class="contact__link">
+            <span class="contact__link-icon">⌘</span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://codeforces.com/profile/kchskandar" target="_blank" rel="noopener" class="contact__link">
+            <span class="contact__link-icon">⚡</span>
+            <span>Codeforces</span>
+          </a>
+        </div>
+
+        <form class="contact__form" id="contactForm" data-reveal data-delay="100">
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form__status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Iskandar Kchaou</p>
+      <p class="footer__tag">Built with intent</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
